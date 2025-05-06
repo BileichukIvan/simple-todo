@@ -1,0 +1,24 @@
+.button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.button.dark {
+  color: var(--color-text-dark);
+}
+
+.button:hover {
+  background-color: var(--color-secondary-light);
+}
+
+.button.dark:hover {
+  background-color: var(--color-secondary-dark);
+}

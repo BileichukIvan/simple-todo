@@ -1,0 +1,64 @@
+:root {
+  --color-bg-light: #f8f9fa;
+  --color-text-light: #212529;
+  --color-primary-light: #3d5af1;
+  --color-secondary-light: #e9ecef;
+  --color-accent-light: #20c997;
+  --color-card-light: #ffffff;
+  --color-card-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-border-light: #dee2e6;
+  --color-input-bg-light: #ffffff;
+  --color-button-danger-light: #ff6b6b;
+  --color-button-danger-hover-light: #fa5252;
+
+  --color-bg-dark: #121212;
+  --color-text-dark: #e9ecef;
+  --color-primary-dark: #5c7cfa;
+  --color-secondary-dark: #343a40;
+  --color-accent-dark: #38d9a9;
+  --color-card-dark: #1e1e1e;
+  --color-card-shadow-dark: rgba(0, 0, 0, 0.3);
+  --color-border-dark: #495057;
+  --color-input-bg-dark: #2c2c2c;
+  --color-button-danger-dark: #ff6b6b;
+  --color-button-danger-hover-dark: #fa5252;
+}
+
+.element-invisible {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+body.dark-theme {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  cursor: pointer;
+  font-family: inherit;
+}

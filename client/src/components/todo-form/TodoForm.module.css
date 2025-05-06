@@ -1,0 +1,62 @@
+.todo-form {
+  display: flex;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  background-color: var(--color-input-bg-light);
+  color: var(--color-text-light);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-form.dark {
+  border-color: var(--color-border-dark);
+  background-color: var(--color-input-bg-dark);
+  color: var(--color-text-dark);
+}
+
+.form-input {
+  width: 100%;
+  border: 0;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: inherit;
+  color: inherit;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.todo-form:has(.form-input:focus) {
+  border-color: var(--color-primary-light);
+}
+
+.todo-form.dark:has(.form-input:focus) {
+  border-color: var(--color-primary-dark);
+}
+
+.button-submit {
+  background-color: var(--color-primary-light);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.todo-form.dark .button-submit {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-submit:hover {
+  background-color: #2c48d8;
+}
+
+.todo-form.dark .btn-submit:hover {
+  background-color: #4a6af5;
+}
